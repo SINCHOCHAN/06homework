@@ -1,8 +1,9 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+[Link to deployed project](https://sinchochan.github.io/06homework/)
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+## About the Project
+This day planner was created with the intention of helping the user view current weather conditions, as well as the forecast for the 5 coming days. Users can also view past cities searched. The project utilizes HTML, CSS, JavaScript and third-party APIs such as Open Weather.
 
 ## User Story
 
@@ -35,5 +36,32 @@ The following image demonstrates the application functionality:
 
 The weather display will show current weather conditions about following 5 days,such as City,Date,Icon image,Temperature,Humidity,Wind speed and UV index.
 
+## Styling
 
-![Apps Demo Image](images/screenshot.png)
+Most elemets were created dynamically with Javascript and styled/positioned using Bootstrap and a separate CSS.
+
+
+## How To Use
+
+The user begins by typing in the city they want to know the weather for. A search history will display below the input box. There is also a button allowing the user to clear their search history.
+
+When the user submits a new city or clicks on a past city, the current weather will display on the right side of the page along with a 5-day forecast.
+
+## Screenshot
+
+![history](./assets/images/searchhistory.png "Screenshot of search history")
+
+![city](./assets/images/city.png "Screenshot of city")
+
+![weather](./assets/images/weatherinfo.png "Screenshot of waether info")
+
+
+
+
+## Credits
+
+* Open Weather APIs: https://openweathermap.org/api
+* JQuery: https://code.jquery.com/jquery-3.4.1.min.js
+* AJAX: https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js
+* Bootstrap: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+* Google Fonts: https://fonts.googleapis.com/css?family=Open+Sans&display=swap

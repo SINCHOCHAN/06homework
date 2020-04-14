@@ -1,83 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Moment JS link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    </link>
-
-</head>
-
-<body>
-
-    <header>
-        <div class="jumbotron bg-dark text-white">
-            <h1 class="text-center">Weather Dashboard</h1>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <form>
-                        <div class="form-group">
-                            <label for="cityInput">Search By City:</label>
-                            <input type="text" class="form-control" id="cityInput" aria-describedby="citySearch">
-                        </div>
-                        <button type="submit" class="btn btn-info" id="submit-city">Submit</button>
-                    </form>
-                    <!-- where the city will go after search -->
-
-                    <div class="card list-group-flush text-center" id="city-history">
-
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="card bg-light mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-2">
-                                <div id="icon">
-                                </div>
-                            </div>
-
-                            <div class="col-md-10" id="current-weather">
-                                <!-- where the current weather info will go -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- where the five day forecast will go -->
-                    <h2>5 Day Forecast:</h2>
-                    <div class="card-deck" id="five-day">
-
-                    </div>
-                </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark text-center">
+        <h1 class="navbar-brand" style="margin: auto; font-size: 30px;">Weather Dashboard</h1>
+    </nav>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: #F0F0F0 ;">
+            <div class="search">
+                <h3>Search For a City:</h3>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 searchInput" type="search" aria-label="Search" placeholder="Boston">
+                <i class="fas fa-search search-icon"></i>
             </div>
-    </main>
-    <footer>
-
-    </footer>
+            <div class="searchHistory"></div>
+            <button type="button" class="btn btn-primary clear">Clear Search History</button>
+        </div>
+        <div class="col-sm-9">
+            <div class="currentWeather">
+            </div>
+            <h2>5 Day Forecast</h2>
+            <div class="fiveDay"></div>
+        </div>
     </div>
-
-
-
-
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-    <!-- Link to my JS file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
