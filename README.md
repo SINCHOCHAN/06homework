@@ -31,11 +31,6 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
-The following image demonstrates the application functionality:
-
-
-The weather display will show current weather conditions about following 5 days,such as City,Date,Icon image,Temperature,Humidity,Wind speed and UV index.
-
 ## Styling
 
 Most elemets were created dynamically with Javascript and styled/positioned using Bootstrap and a separate CSS.
@@ -49,12 +44,11 @@ When the user submits a new city or clicks on a past city, the current weather w
 
 ## Screenshot
 
-![history](./assets/images/search_history.png "Screenshot of search history")
+![history](./assets/images/search.png "Screenshot of search history")
 
 ![city](./assets/images/city.png "Screenshot of city")
 
-![weather](./assets/images/weather_info.png "Screenshot of waether info")
-
+![weather](./assets/images/info.png "Screenshot of waether info")
 
 
 
