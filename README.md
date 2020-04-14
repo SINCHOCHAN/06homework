@@ -49,11 +49,11 @@ When the user submits a new city or clicks on a past city, the current weather w
 
 ## Screenshot
 
-![history](./assets/images/searchhistory.png "Screenshot of search history")
+![history](./assets/images/search_history.png "Screenshot of search history")
 
 ![city](./assets/images/city.png "Screenshot of city")
 
-![weather](./assets/images/weatherinfo.png "Screenshot of waether info")
+![weather](./assets/images/weather_info.png "Screenshot of waether info")
 
 
 
